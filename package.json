@@ -43,9 +43,9 @@
         }
       ],
       "plugins": [
-        [
-          "@electron-forge/plugin-webpack",
-          {
+        {
+          "name": "@electron-forge/plugin-webpack",
+          "config": {
             "mainConfig": "./webpack.main.config.js",
             "renderer": {
               "config": "./webpack.renderer.config.js",
@@ -58,7 +58,7 @@
               ]
             }
           }
-        ]
+        }
       ]
     }
   },
@@ -68,12 +68,12 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.54",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
     "@electron-forge/maker-zip": "^6.0.0-beta.54",
-    "@electron-forge/plugin-webpack": "6.0.0-beta.54",
+    "@electron-forge/plugin-webpack": "^7.2.0",
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
-    "css-loader": "^4.2.1",
-    "electron": "12.0.2",
+    "css-loader": "^6.8.1",
+    "electron": "^28.0.0",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "^2.20.0",
     "fork-ts-checker-webpack-plugin": "^5.0.14",
@@ -85,5 +85,8 @@
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
     "igniteui-dockmanager": "^1.5.0"
+  },
+  "volta": {
+    "node": "20.10.0"
   }
 }

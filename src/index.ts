@@ -16,7 +16,7 @@ const createWindow = (): void => {
     height: 800,
     width: 1000,
     webPreferences: {
-      nativeWindowOpen: true
+      // nativeWindowOpen: true
     }
   });
 
